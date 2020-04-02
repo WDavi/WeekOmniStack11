@@ -5,6 +5,7 @@ import Logon from './pages/Logon';
 import Register from './pages/Register';
 import Profile from './pages/Profile';
 import NewIncident from './pages/NewIncident';
+import UpdateIncident from './pages/UpdateIncident';
 
 export default function Router(){
     return (
@@ -13,7 +14,8 @@ export default function Router(){
                 <Route exact path="/" component={Logon}/>
                 <Route path="/register" component={Register}/>
                 <Route path="/profile" component={Profile}/>
-                <Route path="/incident/new" component={NewIncident}/>
+                <Route exact path="/incident/new" component={NewIncident}/>
+                <Route exact path="/incident/modify" component={UpdateIncident}/>
             </Switch>
         </BrowserRouter>
     )
