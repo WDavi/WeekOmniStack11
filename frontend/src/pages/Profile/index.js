@@ -85,9 +85,9 @@ export default function Profile(){
                             <FiTrash2 size={20} color="#a8a8b3"/>
                         </button>
                         <button type="button" className="update-button" onClick={() => handleModifyIncident(
-                            incident.id, 
-                            incident.title, 
-                            incident. description,
+                            incident.id,
+                            incident.title,
+                            incident.description,
                             incident.value
                             )}>
                             <FiMenu size={20} color="#e02041"/>
